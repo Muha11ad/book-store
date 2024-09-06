@@ -29,10 +29,9 @@ const bookListSlice = createSlice({
                     action.payload.total === '0'
                         ? state.totalCountBooks
                         : action.payload.total
-
                 state.books = state.books
-                    ? [...state.books, ...action.payload]
-                    : [...action.payload]
+                    ? [...state.books, ...action.payload.books]
+                    : [...action.payload.books]
                 state.loading = false
                 state.error = null
             })

@@ -18,7 +18,7 @@ export const fetchCategoryPreview = createAsyncThunk<
 >('books/fetchCategoryPreview', async (category, thunkAPI) => {
     try {
         const response = await getPreviewCategory(category)
-        return { books: response, category }
+        return { books: response.books, category }
     } catch (err: unknown) {
         const knownError = err as ErrorType
 

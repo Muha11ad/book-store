@@ -44,7 +44,7 @@ export const Header = () => {
                 <header className='header _container'>
                     <div className='header__wrapper'>
                         <Link to='/'>
-                            <h2 className='header__title'>IT Bookstore</h2>
+                            <h2 className='header__title'>IT Bookstore DEMO</h2>
                         </Link>
                         <Search className='header__search' />
                         <div className='header__btn-wrapper'>

@@ -20,7 +20,7 @@ export const searchSlice = createSlice({
                 state.error = null
             })
             .addCase(fetchSearch.fulfilled, (state, action) => {
-                state.books = [...action.payload]
+                state.books = [...action.payload.books]
                 state.loading = false
                 state.error = null
             })

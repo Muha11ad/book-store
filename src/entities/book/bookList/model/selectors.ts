@@ -11,6 +11,7 @@ export const selectBookListBooks = createSelector(
     selectBase,
     (state: IBookListState) => state.books
 )
+
 export const selectBookListTotalCountBooks = createSelector(
     selectBase,
     (state: IBookListState) => state.totalCountBooks

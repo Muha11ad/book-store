@@ -34,7 +34,7 @@ export const Footer = ({ className }: { className?: string }) => {
                         <li>
                             <Telegram />
                             <a
-                                href='https://t.me/kozaaq'
+                                href='https://t.me/murodovicma'
                                 target='_blank'
                                 rel='noreferrer'>
                                 Telegram
@@ -43,7 +43,7 @@ export const Footer = ({ className }: { className?: string }) => {
                         <li>
                             <Github />
                             <a
-                                href='https://github.com/UmttikhinaDasha'
+                                href='https://github.com/Muha11ad'
                                 target='_blank'
                                 rel='noreferrer'>
                                 GitHub
@@ -51,12 +51,9 @@ export const Footer = ({ className }: { className?: string }) => {
                         </li>
                         <li>
                             <Email />
-                            <a
-                                href='mailto:darya.125viis.467@gmail.com'
-                                target='_blank'
-                                rel='noreferrer'>
-                                Email
-                            </a>
+                            <a href="mailto:mukhammadjonabdushukurov70@gmail.com"
+                            target='_blank'
+                            rel='noreferrer'>Email</a>
                         </li>
                     </ul>
                 </div>
@@ -66,7 +63,7 @@ export const Footer = ({ className }: { className?: string }) => {
                     <ul className='footer__list'>
                         <li>
                             <a
-                                href='https://api.itbook.store/'
+                                href='https://github.com/Muha11ad/api-book-store'
                                 target='_blank'
                                 rel='noreferrer'>
                                 API used
@@ -74,7 +71,7 @@ export const Footer = ({ className }: { className?: string }) => {
                         </li>
                         <li>
                             <a
-                                href='https://itbook.store/books/free'
+                                href='https://github.com/Muha11ad/api-book-store'
                                 target='_blank'
                                 rel='noreferrer'>
                                 Free eBooks

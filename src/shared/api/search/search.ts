@@ -8,5 +8,5 @@ export const getResultsSearch = (
     searchStr: string,
     page?: number
 ): Promise<IResultsSearch> => {
-    return apiInstance.get(`${BASE_URL}/${searchStr}/${searchStr}`)
+    return apiInstance.get(`${BASE_URL}/${searchStr}/${page}`)
 }
