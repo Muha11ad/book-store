@@ -1,0 +1,33 @@
+.categories {
+  margin-bottom: 50px;
+}
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 70px;
+}
+.categories__title {
+  margin-bottom: 15px;
+}
+.categories__title .title__content {
+  margin-bottom: 2px;
+}
+.categories__title .title__line {
+  width: 100%;
+}
+.categories__content-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+}
+.categories__content-item {
+  min-width: 18%;
+  color: var(--text-primary);
+}
+.categories__content-item:hover {
+  color: var(--primary-bg);
+  cursor: pointer;
+}/*# sourceMappingURL=categories.css.map */

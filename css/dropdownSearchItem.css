@@ -1,0 +1,26 @@
+.dropdown-search-item {
+  display: flex;
+  margin: 5px;
+}
+.dropdown-search-item__image {
+  width: 50px;
+  height: 70px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 5px;
+}
+.dropdown-search-item__title {
+  font-size: 14px;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+.dropdown-search-item__subtitle {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: #b2b2b2;
+  font-size: 12px;
+  width: 100%;
+}
+.dropdown-search-item:hover .dropdown-search-item__title {
+  color: var(--primary-bg);
+}/*# sourceMappingURL=dropdownSearchItem.css.map */

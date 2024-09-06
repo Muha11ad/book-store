@@ -1,0 +1,11 @@
+.loader-breadcrumbs {
+  padding: 26px 0;
+}
+.loader-breadcrumbs__list {
+  display: flex;
+  gap: 5px;
+}
+.loader-breadcrumbs__item {
+  width: 120px;
+  height: 14px;
+}/*# sourceMappingURL=loaderBreadcrumbs.css.map */

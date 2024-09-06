@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/shared/ui/fallback/fallback.scss","fallback.css"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,aAAA;EACA,kBAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EAEA,aAAA;ACAJ;ADEI;EACI,iBAAA;ACAR;ADGI;EACI,aAAA;EACA,eAAA;ACDR;ADII;EACI,aAAA;EACA,eAAA;ACFR;ADKI;EACI,0BAAA;EAEA,aAAA;ACJR;ADMQ;EACI,iBAAA;ACJZ;ADOQ;EACI,sBAAA;ACLZ","file":"fallback.css"}

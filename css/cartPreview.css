@@ -1,0 +1,33 @@
+.cart-preview__content {
+  min-width: 330px;
+}
+.cart-preview__books {
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-bottom: 1px solid var(--border);
+  padding: 15px 20px;
+}
+.cart-preview__books::-webkit-scrollbar {
+  width: 5px;
+}
+.cart-preview__books::-webkit-scrollbar-thumb {
+  background: var(--primary-bg);
+}
+.cart-preview__price {
+  font-size: 14px;
+  color: var(--text-primary);
+  text-align: center;
+  padding: 15px;
+}
+.cart-preview__footer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding: 20px;
+}
+.cart-preview__button {
+  padding: 12px 25px;
+}/*# sourceMappingURL=cartPreview.css.map */

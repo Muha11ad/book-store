@@ -1,0 +1,10 @@
+.price {
+  display: flex;
+  color: var(--red);
+  font-size: 20px;
+}
+.price sup {
+  margin-top: 5px;
+  font-size: 11px;
+  vertical-align: super;
+}/*# sourceMappingURL=price.css.map */
