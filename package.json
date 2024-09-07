@@ -31,7 +31,6 @@
     "react-router-dom": "^6.17.0",
     "react-toastify": "^10.0.4",
     "redux-persist": "^6.0.0",
-    "tsc": "^2.0.4",
     "use-breakpoint": "^4.0.1"
   },
   "devDependencies": {
@@ -51,6 +50,7 @@
     "sass": "^1.69.4",
     "typescript": "^5.5.4",
     "vite": "^4.4.5",
-    "vite-plugin-svgr": "^4.1.0"
+    "vite-plugin-svgr": "^4.1.0",
+    "vite-tsconfig-paths": "^5.0.1"
   }
 }
