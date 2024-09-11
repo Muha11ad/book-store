@@ -20,6 +20,7 @@ import { useAppSelector } from 'shared/lib/store'
 import { Fallback } from 'shared/ui/fallback'
 
 import '../styles/index.scss'
+import { Auth } from 'pages/auth'
 
 const getCategoryNameByLink = (link?: string): string | undefined => {
     for (const values of Object.values(CATEGORIES)) {
@@ -93,7 +94,6 @@ export const AppRouter = () => {
                     }}
                 />
             </Route>
-
             <Route
                 path='cart'
                 element={<Cart />}
@@ -102,6 +102,7 @@ export const AppRouter = () => {
                 }}
             />
             <Route path='/search/:searchLine' element={<SearchResults />} />
+            <Route path='/auth' element={<Auth/>} />
         </Route>
     )
 

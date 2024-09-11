@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-import tsconfigPaths from 'vite-tsconfig-paths'; // Import the plugin
+import tsconfigPaths from 'vite-tsconfig-paths'; 
 
 export default defineConfig({
     plugins: [
       react(),
       svgr(),
-      tsconfigPaths() // Added here
+      tsconfigPaths() 
     ],
     base: '/IT-Bookstore/',
     resolve: {
@@ -24,4 +24,3 @@ export default defineConfig({
       port: 3000,
     },
   });
-  

@@ -1,0 +1,15 @@
+.auth {
+    &-btns {
+        gap: 20px;
+        display: flex;
+        margin-left: 40px;
+    }
+    &-btn {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--primary-bg);
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

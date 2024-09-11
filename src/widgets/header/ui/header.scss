@@ -6,7 +6,6 @@
 
     &__wrapper {
         display: grid;
-
         width: 100%;
         height: 54px;
 
@@ -14,7 +13,7 @@
         justify-content: space-between;
 
         grid-template-columns: 20% 50% 20%;
-        grid-template-areas: 'title search buttons';
+        grid-template-areas: 'title search auth buttons';
     }
 
     &__title {
@@ -34,6 +33,14 @@
 
         padding-right: 15px;
         padding-left: 15px;
+    }
+    &__header__auth-btns{
+        grid-area: auth;
+        justify-self: center;
+
+        margin-left: 40px;
+        max-width: max-content;
+
     }
 
     &__btn-wrapper {

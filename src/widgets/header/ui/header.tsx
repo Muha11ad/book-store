@@ -8,6 +8,7 @@ import Menu from 'shared/assets/icons/menu.svg?react'
 import { CONTENT_NAVIGATION_MENU } from 'shared/consts'
 
 import './header.scss'
+import { HeaderAuthBtns } from 'features/headerAuthBtns'
 
 export const Header = () => {
     const [isViewHeader, setIsViewHeader] = useState(true)
@@ -47,6 +48,8 @@ export const Header = () => {
                             <h2 className='header__title'>IT Bookstore DEMO</h2>
                         </Link>
                         <Search className='header__search' />
+                        <HeaderAuthBtns className='header__auth-btns'/>
+                        
                         <div className='header__btn-wrapper'>
                             <CartPreview onClick={() => navigate('/cart')} />
                         </div>
