@@ -19,7 +19,6 @@ export const fetchSearch = createAsyncThunk<
         return response
     } catch (err: unknown) {
         const knownError = err as ErrorType
-
         return thunkAPI.rejectWithValue({
             messageError: knownError.message,
             status: knownError.response?.status,

@@ -1,16 +1,15 @@
+import { postLoginData } from 'shared/api/auth'
 import { createAsyncThunk } from '@reduxjs/toolkit'
-import { postRegisterData } from 'shared/api/auth'
 import { ErrorType, RejectedDataType } from 'shared/types'
 
-export const fetchRegister = createAsyncThunk<
+export const fetchLogin = createAsyncThunk<
     any, // The type of the resolved data (can be adjusted based on API)
-    { name: string; email: string; password: string }, 
-    { rejectValue: RejectedDataType } 
->('user/fetchRegister', async (data, thunkAPI) => {
+    { email: string; password: string },
+    { rejectValue: RejectedDataType }
+>('user/fetchLogin', async (data, thunkAPI) => {
     try {
-        const response = await postRegisterData(data) 
-        console.log('response : ' + [...response])
-        return response 
+        const response = await postLoginData(data)
+        return response
     } catch (err: unknown) {
         const knownError = err as ErrorType
         return thunkAPI.rejectWithValue({

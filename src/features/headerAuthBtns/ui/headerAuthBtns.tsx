@@ -11,8 +11,7 @@ export const HeaderAuthBtns : FC<IHeaderAuthBtns> = (props) => {
   const { className } = props
   return (
     <div className={clsx('auth-btns', className)}>
-  <Link to="/auth" className="auth-btn">Register</Link>
-  <Link to="/auth" className="auth-btn">Login</Link>
+  <Link to="/auth" className="auth-btn">Register / Login</Link>
     </div>
   )
 }

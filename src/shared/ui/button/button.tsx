@@ -15,12 +15,15 @@ interface IButton {
     /** Additional styles. */
     readonly className?: string
 
+    readonly type? : "button" | "submit" 
+
     /** The function is executed when the button is pressed. */
     readonly onClick?: () => void
 }
 
 export const Button: FC<IButton> = (props) => {
     const {
+        type = "button",
         children,
         Icon,
         theme = 'blue',
@@ -31,7 +34,7 @@ export const Button: FC<IButton> = (props) => {
 
     return (
         <button
-            type='button'
+            type={type}
             onClick={onClick}
             className={clsx(
                 'button',

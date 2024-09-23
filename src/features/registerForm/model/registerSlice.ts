@@ -1,11 +1,13 @@
 import { IRegisterState } from './types'
 import { createSlice } from '@reduxjs/toolkit'
-import { fetchRegister } from './registerThunk'
+import { fetchRegister, verifyCode } from './registerThunk'
 
 const initialState: IRegisterState = {
     data: null,
     loading: false,
     error: null,
+    isVerified: false,
+    isRegistered: false,
 }
 
 export const registerSlice = createSlice({
@@ -22,11 +24,17 @@ export const registerSlice = createSlice({
                 state.data = action.payload
                 state.loading = false
                 state.error = null
+                state.isRegistered = true
             })
             .addCase(fetchRegister.rejected, (state, action) => {
                 state.loading = false
-                state.error =
-                    action.payload?.messageError ?? 'Registration failed'
+                state.error = action.payload?.messageError ?? null
+            })
+            .addCase(verifyCode.fulfilled, (state, action) => {
+                state.isVerified = action.payload
+            })
+            .addCase(verifyCode.rejected, (state, _) => {
+                state.isVerified = false
             })
     },
 })

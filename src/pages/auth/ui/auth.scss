@@ -1,0 +1,19 @@
+.auth {
+    &__wrapper {
+        gap: 20px;
+        display: flex;
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    &__btn {
+        gap: 7px;
+        border: none;
+        background: none;
+        font-size: 16px;
+        color: var(--black);
+        text-decoration: underline;
+        &:hover {
+            color: var(--primary-bg);
+        }
+    }
+}

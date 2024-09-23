@@ -1,3 +1,5 @@
+@use 'src/app/styles/breakpoints';
+
 .auth {
     &-btns {
         gap: 20px;
@@ -8,8 +10,20 @@
         font-size: 18px;
         font-weight: 700;
         color: var(--primary-bg);
-        &:hover{
+        &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width: breakpoints.$md) {
+    .auth {
+        &-btns {
+            gap: 10px;
+            margin-left: 20px;
+        }
+        &-btn {
+            font-size: 14px;
         }
     }
 }

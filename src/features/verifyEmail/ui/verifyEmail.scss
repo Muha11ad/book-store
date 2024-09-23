@@ -1,0 +1,26 @@
+.verify-form {
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__input {
+        font-size: 16px;
+        padding: 8px 15px;
+
+        background: var(--white);
+        color: var(--text-input);
+
+        border: 1px solid var(--border);
+        border-radius: 4px;
+
+        &:focus {
+            border: 1px solid var(--primary-bg);
+        }
+    }
+    &__input-wrapper {
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}

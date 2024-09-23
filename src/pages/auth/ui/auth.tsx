@@ -1,19 +1,26 @@
-import { Register } from 'features/register'
-import { useState } from 'react'
-import './auth.scss'
+import './auth.scss';
+import { Register } from 'widgets/register';
+import { useState } from 'react';
+import { Login } from 'features/login/ui/login';
 
 export const Auth = () => {
-  const [isLogin, setIsLogin] = useState<boolean>(false)
-  
-  function changeFormContent(){setIsLogin(!isLogin)}
+  const [isLogin, setIsLogin] = useState<boolean>(false);
+ 
+  function changeFormContent() {
+    setIsLogin((prevState) => !prevState);
+  }
 
-  const formContent = isLogin ? "" : <Register/>
-  const buttonContent = isLogin ? "Do not have an account?" : "Already have account?"
-  
+  const formContent = isLogin ? <Login /> : <Register />;
+  const buttonContent = isLogin ? "Don't have an account?" : "Already have an account?";
+
   return (
-    <div className='_container'>
+    <div className='_container auth__wrapper'>
       {formContent}
-      <button onClick={changeFormContent}>{buttonContent}</button>
+      <button onClick={changeFormContent} className='auth__btn'>
+        <span className='auth__btn-content'>
+          {buttonContent}
+        </span>
+      </button>
     </div>
-  )
-}
+  );
+};
