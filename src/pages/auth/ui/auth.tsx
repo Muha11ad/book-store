@@ -21,6 +21,10 @@ export const Auth = () => {
           {buttonContent}
         </span>
       </button>
+      <a href="http://localhost:9000/auth/google" className="google-login-button">
+  Войти через Google
+</a>
+
     </div>
   );
 };
